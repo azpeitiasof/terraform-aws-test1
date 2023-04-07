@@ -1,3 +1,8 @@
+provider "aws" {
+  region = var.region
+}
+
+
 data "terraform_remote_state" "vpc" {
   backend = "local"
 
